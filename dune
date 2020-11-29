@@ -1,2 +1,4 @@
 (executable
- (name messenger))
+ (name messenger)
+ (libraries opium yojson ppx_deriving_yojson.runtime)
+ (preprocess (pps ppx_deriving_yojson)))
